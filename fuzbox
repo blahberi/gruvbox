@@ -1,0 +1,1 @@
+echo "Copying $(gruvbox | fzf --ansi | awk '{print $(NF -1)}' | tr -d '\n' | tee >(wl-copy -o -n)) to clipboard"
